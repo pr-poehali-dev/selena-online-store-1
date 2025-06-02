@@ -1,4 +1,5 @@
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -60,14 +61,20 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">ПОМОЩЬ</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link
+                  to="/delivery"
+                  className="hover:text-white transition-colors"
+                >
                   Доставка
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link
+                  to="/returns"
+                  className="hover:text-white transition-colors"
+                >
                   Возврат
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">

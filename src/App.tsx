@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import Account from "./pages/Account";
 import Cart from "./pages/Cart";
 import Gallery from "./pages/Gallery";
+import Delivery from "./pages/Delivery";
+import Returns from "./pages/Returns";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/account" element={<Account />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/returns" element={<Returns />} />
           <Route path="/catalog" element={<Index />} />
           <Route path="/about" element={<Index />} />
           <Route path="*" element={<NotFound />} />
